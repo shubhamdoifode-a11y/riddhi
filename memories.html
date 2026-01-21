@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Memories 💞</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Music -->
+<audio id="bgMusic" loop>
+    <source src="riddhi.mpeg" type="audio/mpeg">
+</audio>
+
+    <!-- Hearts Background -->
+    <div class="hearts-bg" id="heartsBg"></div>
+
+    <section class="memories-page">
+        <h1>Our Beautiful Memories 💞</h1>
+
+        <div class="memory-cards">
+            <div class="memory-card" onclick="openPopup('images/pic1.jpg', 'Our first beautiful memory 💖')">
+                <img src="o.jpeg">
+                <h3>First Moment</h3>
+            </div>
+
+            <div class="memory-card" onclick="openPopup('images/pic2.jpg', 'Moments I will never forget 💕')">
+                <img src="d.jpeg">
+                <h3>Hold My Hand</h3>
+            </div>
+
+            <div class="memory-card" onclick="openPopup('images/pic3.jpg', 'Every moment with you feels magical ❤️')">
+                <img src="e.jpeg">
+                <h3>Sorry</h3>
+            </div>
+
+            <div class="memory-card" onclick="openPopup('images/pic4.jpg', 'Your custom message ❤️')">
+               <img src="v.jpeg">
+               <h3>Come Close To Me</h3>
+            </div>
+
+            <div class="memory-card" onclick="openPopup('images/pic4.jpg', 'Your custom message ❤️')">
+               <img src="t.jpeg">
+               <h3>Be With Me</h3>
+            </div>
+            
+            <div class="memory-card" onclick="openPopup('images/pic4.jpg', 'Your custom message ❤️')">
+               <img src="u.jpeg">
+               <h3>Just A Pic</h3>
+            </div>
+
+            <div class="memory-card" onclick="openPopup('images/pic4.jpg', 'Your custom message ❤️')">
+               <img src="h.jpeg">
+               <h3>Enjoying The Moment</h3>
+            </div>
+
+            <div class="memory-card" onclick="openPopup('images/pic4.jpg', 'Your custom message ❤️')">
+               <img src="n.jpeg">
+               <h3>Old Memory</h3>
+            </div>
+ 
+        </div>
+    </section>
+
+    <!-- POPUP -->
+    <div class="memory-popup" id="memoryPopup">
+        <div class="popup-box">
+            <span class="close-btn" onclick="closePopup()">×</span>
+            <img id="popupImg">
+            <p id="popupText"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
